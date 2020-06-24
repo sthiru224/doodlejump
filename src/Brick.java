@@ -3,9 +3,15 @@ import java.awt.Graphics;
 public abstract class Brick {
 	int	x; 
 	int y; 
+	int origY;
+	boolean notBroken;
+	public static boolean boinged = false;
+	
 	public Brick(int x, int y) {
 		this.x = x; 
 		this.y = y; 
+		origY = y;
+		notBroken = true;
 	}
 	public int getX() {
 		return x; 
@@ -23,10 +29,13 @@ public abstract class Brick {
 		x-=20;
 	}
 	
-	public void lowerY() {
-		y+=40;
+	public void lowerY(int num) {
+		y+=num;
 	}
 	
+	public void higherY() {
+		y-=60;
+	}
 	
 	
 	

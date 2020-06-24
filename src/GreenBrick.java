@@ -16,7 +16,7 @@ public class GreenBrick  extends Brick{
 	
 	public void openImage() {
 		try {
-			greenBrick =  ImageIO.read(getClass().getResource("green.png"));
+			greenBrick =  ImageIO.read(getClass().getResource("gB.png"));
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

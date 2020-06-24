@@ -17,7 +17,7 @@ public class BlueBrick extends Brick {
 	
 	public BlueBrick(int x, int y) {
 		super(x, y);
-		timerBlue = new Timer(50, null);
+		timerBlue = new Timer(75, null);
 				timerBlue.addActionListener(new ActionListener() {
 
 			@Override
@@ -52,7 +52,7 @@ public class BlueBrick extends Brick {
 	
 	public void openImage() {
 		try {
-			blueBrick =  ImageIO.read(getClass().getResource("blue.png"));
+			blueBrick =  ImageIO.read(getClass().getResource("blB.png"));
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
